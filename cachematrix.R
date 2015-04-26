@@ -48,7 +48,7 @@ cacheSolve <- function(x, ...) {
     print("Cache MISS - Calculating inverse matrix...")
     
     # Assigning inverse matrix value to cached variable
-    x$setInverse(solve(x))
+    x$setInverse(solve(x$get()))
   }
   
   # Both if inverse matrix was calculated or grabbed from cache, its value will be returned
